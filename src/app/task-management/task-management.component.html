@@ -1,0 +1,10 @@
+<p>
+  task-management works!
+</p>
+<md-checkbox [checked]="check1" (change)="setCheck1($event)">
+  Check This
+</md-checkbox>
+<md-checkbox [checked]="check2" (change)="setCheck2($event)">
+  Check This Too
+</md-checkbox>
+<button md-raised-button [disabled]="isDisabled()" (click)="summary()">Verify</button>
