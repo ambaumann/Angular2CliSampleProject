@@ -1,0 +1,4 @@
+<p> Showing Weather </p>
+<app-weather [error]="(weatherService.error$ | async)"
+[weatherLocation]="weatherService.location$ | async"
+(enterPress)="weatherService.setLocation($event)"></app-weather>
